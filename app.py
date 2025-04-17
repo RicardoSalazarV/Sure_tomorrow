@@ -1,4 +1,4 @@
-# app.py
+
 import os
 import streamlit as st
 import pandas as pd
@@ -27,7 +27,7 @@ def load_data(uploaded_file=None):
                 os.path.join("datasets", "insurance_us.csv")
             ]
 
-            # Ruta local para desarrollo (ajústala a tu entorno si necesitas)
+            # Ruta local 
             if os.path.exists("C:\\Users\\ricar\\Desktop\\insurance_project\\datasets\\insurance_us.csv"):
                 possible_paths.insert(0, "C:\\Users\\ricar\\Desktop\\insurance_project\\datasets\\insurance_us.csv")
 
@@ -44,7 +44,7 @@ def load_data(uploaded_file=None):
                 st.info("⚠️ No se encontró el archivo de datos. Por favor, carga un archivo CSV.")
                 return pd.DataFrame()
 
-        # Renombrar columnas para consistencia
+        # Renombrar columnas 
         df = df.rename(columns={
             'Gender': 'gender',
             'Age': 'age',
