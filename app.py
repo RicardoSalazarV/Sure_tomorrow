@@ -111,4 +111,4 @@ else:
         st.dataframe(df.iloc[indices[0]])
 
     st.markdown("---")
-    st.caption("Desarrollado por [Tu Nombre] • Proyecto de portafolio con Streamlit")
+    st.caption("Desarrollado por [Ricardo Salazar] • Proyecto de portafolio con Streamlit")
